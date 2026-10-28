@@ -1,3 +1,5 @@
-﻿azure-functions
+﻿
+azure-functions
 azure-identity
 azure-mgmt-resourcegraph
+python-dotenv

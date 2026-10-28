@@ -2,10 +2,13 @@
 import json
 import os
 
+from dotenv import load_dotenv
 from azure.identity import AzureCliCredential
 from azure.mgmt.resourcegraph import ResourceGraphClient
 from azure.mgmt.resourcegraph.models import QueryRequest
 
+
+load_dotenv()
 
 # Use the subscription ID from the environment.
 subscription_id = os.environ.get("AZURE_SUBSCRIPTION_ID")
