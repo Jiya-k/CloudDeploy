@@ -18,3 +18,10 @@ __pycache__/
 .vscode/
 .DS_Store
 Thumbs.db
+
+# Azure Functions local settings
+local.settings.json
+
+# Local deployment artifacts
+CloudDeploy.zip
+deploy-package/
