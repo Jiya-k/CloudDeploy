@@ -1,0 +1,23 @@
+
+[
+  {
+    "id": "/subscriptions/demo/resourceGroups/production-rg/providers/Microsoft.Storage/storageAccounts/prodstorage001",
+    "type": "Microsoft.Storage/storageAccounts",
+    "name": "prodstorage001",
+    "properties": {
+      "publicNetworkAccess": "Enabled"
+    },
+    "tags": {
+      "environment": "production"
+    }
+  },
+  {
+    "id": "/subscriptions/demo/resourceGroups/dev-rg/providers/Microsoft.Storage/storageAccounts/devstorage001",
+    "type": "Microsoft.Storage/storageAccounts",
+    "name": "devstorage001",
+    "properties": {
+      "publicNetworkAccess": "Disabled"
+    },
+    "tags": {}
+  }
+]
