@@ -1,4 +1,6 @@
+
 name: CloudDeploy CI
+
 on:
   push:
     branches:
@@ -6,17 +8,21 @@ on:
   pull_request:
     branches:
       - main
+
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
     steps:
-      -name: Download code
-       uses: actions/checkout@v4
-       -name: Set up Python
+      - name: Download repository code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
         uses: actions/setup-python@v5
-         with:
-           python-version: '3.13'
-        -name: Install pytest
-          run: python -m pip install pytest
-        -name: Run tests
-          run: python -m pytest
+        with:
+          python-version: "3.13"
+
+      - name: Install pytest
+        run: python -m pip install pytest
+
+      - name: Run automated tests
+        run: python -m pytest -v
